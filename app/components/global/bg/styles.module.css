@@ -1,0 +1,29 @@
+.bg {
+ /*    height: 100%;
+    width: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh ;
+    height: 100lvh;
+   /*  height: 100dvh; */
+   /*  height: 100dvh;
+    height: 100svh; */
+    right: 0;
+    z-index: -1;
+    background: var(--background-gradient);
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.img {
+    opacity: .4;
+    object-fit: cover;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+   
+}
+
+

@@ -1,0 +1,59 @@
+.text {
+    max-width: 25ch;
+ /*    transition-duration: .5s ; */
+    font-weight: 200;
+
+}
+
+
+
+.hoverText {
+    /* transition:
+    0.25s font-weight,
+    0.25s color; */
+    transition-duration: .3s ;
+  }
+  
+  .hoverText:hover {
+   /*  font-family: var(--Ral-bold); */
+    color: #d8e9df;
+    font-weight: 900;
+
+  }
+  
+  /* To the right */
+  .hoverText:hover + .hoverText {
+   /*  font-family: var(--Ral-bold); */
+    color: #d8e9df;
+    font-weight: 700;
+  }
+  
+  .hoverText:hover + .hoverText + .hoverText {
+    /* font-family: var(--Ral-medium); */
+    color: #d8e9df;
+    font-weight: 500;
+  }
+
+  .hoverText:hover + .hoverText + .hoverText + .hoverText {
+  /*   font-family: var(--Ral-regular); */
+    color: #d8e9df;
+    font-weight: 300;
+  }
+  
+  /* To the left */
+  .hoverText:has(+ .hoverText:hover) {
+/*     font-family: var(--Ral-bold); */
+    color: #d8e9df;
+    font-weight: 700;
+  }
+  
+  .hoverText:has(+ .hoverText + .hoverText:hover) {
+   /*  font-family: var(--Ral-medium); */
+    color: #d8e9df;
+    font-weight: 500;
+  }
+  .hoverText:has(+ .hoverText + .hoverText + .hoverText:hover) {
+ /*    font-family: var(--Ral-regular); */
+    color: #d8e9df;
+    font-weight: 300;
+  }

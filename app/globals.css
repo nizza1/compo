@@ -1,13 +1,14 @@
 :root {
   --max-width: 1400px;
   --border-radius: 17px;
+  --padding-in: 1.3rem;
 
 
  --foreground: rgb(191, 229, 191);
  --background-gradient: linear-gradient(
     180deg,
     rgb(30, 37, 30) 0%,
-    rgb(19, 19, 19) 100%
+    rgb(12, 12, 12) 100%
   );
   --border-light: rgba(240, 255, 246, 0.224);
 
@@ -64,6 +65,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-weight: 100;
+  font-size: 1.2rem;
 }
 
+a {
+  color: var(--foreground);
+  text-decoration: none;
+}
 

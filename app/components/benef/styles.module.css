@@ -1,0 +1,23 @@
+.co {
+    padding: 50px var(--padding-in);
+
+}
+.innerCo {
+    max-width: 1300px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+
+.textCo {
+    max-width: 50ch;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.textCo p {
+    line-height: 1.7rem;
+}

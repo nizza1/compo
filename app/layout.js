@@ -16,11 +16,13 @@ export const metadata = {
 };
 
 import Bg from "./components/global/bg/bg";
+import Header from "./components/header/header";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={mona.className}>
+        <Header />
         <Bg />
         {children}</body>
     </html>

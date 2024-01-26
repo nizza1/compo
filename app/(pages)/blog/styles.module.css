@@ -1,0 +1,8 @@
+.main {
+    min-height: 100vh;
+
+}
+
+.innerCo {
+    padding: 100px var(--padding-in);
+}

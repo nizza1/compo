@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1400px;
+  --max-width: 1300px;
   --border-radius: 17px;
   --padding-in: 1.3rem;
 
@@ -13,6 +13,7 @@
   --border-light: rgba(240, 255, 246, 0.224);
 
   --success: rgb(128, 211, 128) ;
+  --white-text:rgb(199, 212, 199);
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -65,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 a {

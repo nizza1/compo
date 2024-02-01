@@ -18,10 +18,13 @@ export const metadata = {
 import Bg from "./components/global/bg/bg";
 import Header from "./components/header/header";
 
+import Smooth from './components/global/smoothScroll/Smooth'
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={mona.className}>
+        <Smooth />
         <Header />
         <Bg />
         {children}</body>

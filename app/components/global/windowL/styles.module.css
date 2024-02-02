@@ -18,7 +18,7 @@
 .co {
     border: 1px solid var(--border-light);
     background-color: rgba(240, 248, 255, 0.044);
-    width: 800px ;
+    width: 1200px ;
     height: 500px;
     max-width: 100%;
     border-radius: var(--border-radius);

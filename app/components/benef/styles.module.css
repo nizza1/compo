@@ -9,9 +9,29 @@
     display: flex;
     column-gap: 2rem;
     justify-content: space-between;
+    position: relative;
+
+   /*  background-color: aquamarine; */
+
+
+}
+
+.windowCo {
+    position: sticky;
+    top: 200px;
+    height: fit-content;
+}
+
+.textsCo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 300px;
+   /*  background-color: green; */
+    padding: 2rem 0;
 }
 
 .textCo {
+/*     background-color: red; */
     max-width: 50ch;
     display: flex;
     flex-direction: column;

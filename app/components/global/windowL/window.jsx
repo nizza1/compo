@@ -14,9 +14,15 @@ const Window = () => {
       })
 
     
-     /* const scale = useSpring(Y); */
+   
+
      const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+    /*  const S = useTransform(scrollYProgress, [0, 1], [0.8, 1]); */
+    /*  const scale = useSpring(S,{ stiffness: 1000, damping: 30 }); */
+   /*   const scale = spring; */
      const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+/*      const Y = useTransform(scrollYProgress, [0, 1], [0.8, 1])
+     const spring = useSpring(Y); */
     
  /*      const targetScale = 1 -  0.05;
       const targetOpacity = 1 - 0.15; */

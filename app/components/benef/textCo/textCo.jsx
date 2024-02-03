@@ -4,7 +4,7 @@ import HoverText from '../../global/hoverText/hoverText'
 import {motion ,useTransform ,useScroll } from 'framer-motion'
 import styles from './styles.module.css'
 
-const Textco = ({title, p , children}) => {
+const Textco = ({title, p }) => {
     const textAr= useRef(null)
     const { scrollYProgress } = useScroll({
     target: textAr,
@@ -16,7 +16,7 @@ const Textco = ({title, p , children}) => {
          <h1><HoverText text={title}/></h1> 
         
          <motion.div ref={textAr} style={{opacity}}>
-          {children}
+          <p>{p}</p>
          </motion.div>
     </div>
   )

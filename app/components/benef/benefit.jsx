@@ -21,19 +21,22 @@ const Benefit = () => {
           <div className={styles.textsCo}>
             
 
-          <div className={styles.textCo}>
+         
+
+             <div className={styles.textCo}>
            <Textco title='Here is the first benefit '
-            
-            children={<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum, fugit id repellat laboriosam, delectus dolores iusto tempora vitae maxime quidem architecto non eaque debitis nulla numquam magnam iste consectetur?</p>}
+            p='Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum, fugit id repellat laboriosam, delectus dolores iusto tempora vitae delectus dolores iusto tempora vitaedelectus dolores iusto tempora vitae'
+           
             />
              </div>
 
              <div className={styles.textCo}>
            <Textco title='Here is the first benefit '
-            
-            children={<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum, fugit id repellat laboriosam, delectus dolores iusto tempora vitae maxime quidem architecto non eaque debitis nulla numquam magnam iste consectetur?</p>}
+            p='Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum, fugit id repellat laboriosam, delectus dolores iusto tempora vitae delectus dolores iusto tempora vitaedelectus dolores iusto tempora vitae'
+           
             />
              </div>
+
 
             
 

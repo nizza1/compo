@@ -42,3 +42,9 @@
     line-height: 1.7rem;
     color: var(--white-text);
 }
+
+@media (max-width: 700px) {
+    .windowCo {
+        display: none;
+    }
+}

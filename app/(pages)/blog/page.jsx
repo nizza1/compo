@@ -26,7 +26,6 @@ const Page = async() => {
         <h1>BLOG</h1>
 
         <div className={styles.content}>
-          
           {posts.map((post) => (
             <div key={post.id} className={styles.post}>
               <h2>{post.title}</h2>

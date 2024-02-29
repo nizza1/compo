@@ -1,0 +1,17 @@
+.co {
+
+}
+
+.inputCo {
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    padding-bottom: .8rem;
+}
+
+.inputField {
+    background: transparent;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.138);
+    padding: .7rem 1rem;
+}

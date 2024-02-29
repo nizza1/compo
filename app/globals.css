@@ -5,10 +5,19 @@
 
 
  --foreground: rgb(191, 229, 191);
- --background-gradient: linear-gradient(
+/*  --background-gradient: linear-gradient(
     180deg,
     rgb(30, 37, 30) 0%,
     rgb(12, 12, 12) 100%
+  ); */
+
+  --background-gradient: linear-gradient(
+    180deg,
+    rgb(34, 53, 34),
+    rgb(27, 41, 27),
+    rgb(20, 31, 20),
+    rgb(14, 21, 14),
+    rgb(10, 16, 10)
   );
   --border-light: rgba(240, 255, 246, 0.224);
 

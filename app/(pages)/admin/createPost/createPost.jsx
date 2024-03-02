@@ -71,7 +71,7 @@ const CreatePost = () => {
                 }
               );
 
-              console.log(response.json());
+              console.log(response);
             }
             
               setLoading(false);

@@ -1,26 +1,25 @@
+
 import React from 'react'
 import styles from './styles.module.css'
-import prisma from '@/lib/prisma'
 
 import Image from 'next/image'
 import HoverText from '@/app/components/global/hoverText/hoverText'
 
 async function getPosts(){
-  const posts = await prisma.post.findMany({
-    where: {published: true},
-    include: {
-      author:{
-        select: {name: true}
-      }
-    }
+
+  const response = await fetch('http://localhost:3000/api/getAllPosts', {
+    next: { revalidate: 60 }, // Revalidate every 60 seconds
+    method: 'GET',
   })
 
+  const posts = await response.json();
   return posts
+
 }
 
 const Page = async() => {
 
-  const posts = await getPosts()
+const posts = await getPosts();
 
   return (
     <main className={styles.main}>
@@ -29,6 +28,7 @@ const Page = async() => {
         <h1>BLOG   </h1>
 
         <div className={styles.content}>
+    
           {posts.map((post) => (
             <div key={post.id} className={styles.post}>
               <Image
@@ -41,7 +41,7 @@ const Page = async() => {
               <p>By {post.author.name}</p>
               <p>{post.content}</p>
             </div>
-          ))}
+          ))} 
         </div>
         </div>
        

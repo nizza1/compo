@@ -1,11 +1,12 @@
 // createPost.js
 
-import { NextResponse } from 'next/server';
+import { NextResponse , NextRequest } from 'next/server';
 import prisma from '@/lib/prisma';
 
 
 
-export async function POST(req) {
+export async function POST(req , res) {
+
 
   const body = await req.json();
   console.log(body);
@@ -13,12 +14,9 @@ export async function POST(req) {
   const imgUrl = body.imgUrl;
 
   console.log(imgUrl);
-  if (!imgUrl) {
-   /*  return NextResponse.error('postImage is required', { status: 400 }); */
-   return {
-    status: 201,
-    body: JSON.stringify({ message: 'Post created successfully' }),
-  };
+  if (!imgUrl || imgUrl.length === 0) {
+    return NextResponse.error('postImage is required', { status: 400 });
+
   }
 try {
   // Create post in database
@@ -38,14 +36,10 @@ try {
 
   return NextResponse.json({ message: 'Post created successfully' }, { status: 201 });
 
-} catch (error) {
- /*  return NextResponse.error('Error creating post', { status: 500 }); */
- return {
-  status: 201,
-  body: JSON.stringify({ message: 'Post created successfully'}),
-};
+} catch (error) { 
+ console.log(error);
+  return NextResponse.error({error, message:'Error creating post'}, { status: 500 })
+
 }
-
-
 
 }

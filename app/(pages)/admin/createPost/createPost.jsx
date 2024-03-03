@@ -3,6 +3,7 @@
 import React, {useState, useRef} from 'react'
 import styles from './styles.module.css'
 
+import { uploadImg } from '@/app/serverActions/upload/img/uploadImg';
 
 const CreatePost = () => {
 
@@ -39,8 +40,15 @@ const CreatePost = () => {
   
               e.preventDefault();
               setLoading(true);
+
               const file = imageFile?.current.files[0];
-              const response = await fetch(
+
+              const ress = await uploadImg(file);
+              
+              console.log(ress);
+
+
+            /*   const response = await fetch(
                 `/api/img/upload?filename=${file?.name}`,
                 {
                   method: 'POST',
@@ -48,19 +56,19 @@ const CreatePost = () => {
                     file
                   }
                 },
-              );
-     
+              ); */
+     /* 
               const newBlob = (await response.json());
-             /*  setBlob(newBlob); */
+    
               setState(prevState => ({
                 ...prevState,
                 values: {
                   ...prevState.values,
                   imgUrl: newBlob?.url || ''
                 }
-              }));
+              })); */
 
-             if (newBlob?.url) {
+           /*   if (newBlob?.url) {
              const { title, des, by, imgUrl } = state.values;
               const response = await fetch(
                 '/api/post/upload', // Update the URL to match your new route
@@ -72,7 +80,7 @@ const CreatePost = () => {
               );
 
               console.log(response);
-            }
+            } */
             
               setLoading(false);
     

@@ -4,8 +4,11 @@ import styles from './styles.module.css'
 
 import Image from 'next/image'
 import HoverText from '@/app/components/global/hoverText/hoverText'
+import Link from 'next/link'
 
-async function getPosts(){
+import { getPosts } from '@/app/serverActions/getAllPosts/getPosts'
+
+/* async function getPosts(){
 
   const response = await fetch('http://localhost:3000/api/getAllPosts', {
     next: { revalidate: 60 }, // Revalidate every 60 seconds
@@ -15,7 +18,7 @@ async function getPosts(){
   const posts = await response.json();
   return posts
 
-}
+} */
 
 const Page = async() => {
 
@@ -40,6 +43,7 @@ const posts = await getPosts();
               <h2>{post.title}</h2>
               <p>By {post.author.name}</p>
               <p>{post.content}</p>
+              <Link href={`/blog/${post.id}`}> read more </Link>
             </div>
           ))} 
         </div>

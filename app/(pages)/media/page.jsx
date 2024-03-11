@@ -26,7 +26,7 @@ const Page = async() => {
         <div>
         {response.blobs.map((blob) => (
             <div key={blob.pathname} className={styles.line}>
-               {/*  <Image src={blob.url} 
+                {/* <Image src={blob.url} 
                 alt={blob.name}
                 width={300}
                 height={200}

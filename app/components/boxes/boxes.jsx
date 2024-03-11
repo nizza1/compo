@@ -6,12 +6,12 @@ const Boxes = () => {
       
     <div className={styles.box}>
         <div className={styles.iluCo}>
-        <Image 
+    {/*     <Image 
         className={styles.ilu}
         src={img}
         alt='icon'
         fill={true}
-        />
+        /> */}
         </div>
 
         <h1 className={styles.boxText}>

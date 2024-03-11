@@ -1,0 +1,10 @@
+.co {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--border-light);
+
+}

@@ -2,7 +2,12 @@ import React from 'react'
 import HoverText from '@/app/components/global/hoverText/hoverText'
 import styles from './styles.module.css'
 
+//components
+import Avatar from './avatar/avatar'
 import Image from 'next/image'
+import Compass from './compas/compas'
+import Crads from './cards/crads'
+
 const img = '/hero-ilu/Palette-pana.svg'
 
 import Button from '../global/contactButton/button'
@@ -14,11 +19,16 @@ const Hero = () => {
 
         <div className={styles.textCo}>
              <h1 className={styles.title}>
-             <HoverText text='Wir entwickeln      maßgeschneiderte Websites'/>
+             <HoverText text='Lorem ipsum '/>
+             <span></span>
+             <span></span>
+             <span></span>
+             <br />
+             <HoverText text=' dolor sit '/>
              </h1>
 
              <p className={styles.underTitle}>
-                 <HoverText text='Die deine  Kunden überzeugt'/>
+                 <HoverText text='lorem ipsum '/>
              </p>
 
              <div className={styles.buttonCo}>
@@ -26,43 +36,13 @@ const Hero = () => {
              </div>
         </div>
 
-        <div className={styles.boxes}>
-      
-            <div className={styles.box}>
-                <div className={styles.iluCo}>
-                <Image 
-                className={styles.ilu}
-                src={img}
-                alt='icon'
-                fill={true}
-                />
-                </div>
+        <div className={styles.avatarCo}>
+         {/*    <Crads /> */}
 
-                <h1 className={styles.boxText}>
-                    Design
-                </h1>
-               
-            </div>
 
-            <div className={styles.box}>
-               <h1 className={styles.boxText}>
-                    Entwicklung
-                </h1>
-               
-            </div>
-            <div className={styles.box}>
-               <h1 className={styles.boxText}>
-                    Strategie
-                </h1>
-               
-            </div>
-            <div className={styles.box}>
-               <h1 className={styles.boxText}>
-                    Beratung
-                </h1>
-               
-            </div>
         </div>
+
+       
         
         
     </section>

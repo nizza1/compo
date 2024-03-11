@@ -24,14 +24,14 @@ const Benefit = () => {
          
 
              <div className={styles.textCo}>
-           <Textco title='Here is the first benefit '
+           <Textco title='Lorem ipsum dolor sit amet consectetur'
             p='Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum, fugit id repellat laboriosam, delectus dolores iusto tempora vitae delectus dolores iusto tempora vitaedelectus dolores iusto tempora vitae'
            
             />
              </div>
 
              <div className={styles.textCo}>
-           <Textco title='Here is the first benefit '
+           <Textco title='Lorem ipsum dolor sit amet consectetur'
             p='Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum, fugit id repellat laboriosam, delectus dolores iusto tempora vitae delectus dolores iusto tempora vitaedelectus dolores iusto tempora vitae'
            
             />

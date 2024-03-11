@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={mona.className}>
-       {/*  <Smooth /> */}
+        <Smooth />
         <Header />
         <Bg />
         {children}</body>

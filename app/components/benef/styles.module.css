@@ -47,4 +47,7 @@
     .windowCo {
         display: none;
     }
+    .textsCo {
+        row-gap: 150px;
+    }
 }

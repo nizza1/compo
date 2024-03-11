@@ -22,7 +22,7 @@ const Window = () => {
       opacity
       }} >
         <div className={styles.titleCo}>
-        <h1><HoverText text='Here is some experience' /></h1>
+        <h1><HoverText text='Lorem ipsum dolor sit amet consectetur' /></h1>
         </div>
         
         
